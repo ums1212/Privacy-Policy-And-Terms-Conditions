@@ -31,6 +31,10 @@
 <body>
     <div class="container">
         <div class="message">
+            <img src="img/meme.png" alt="Meme" style="max-width: 100%; height: auto; margin-bottom: 15px;"><br>
+            <a href="https://play.google.com/store/apps/details?id=org.comon.pdfredactorm" target="_blank">
+                <img src="img/logo.png" alt="Logo" style="max-width: 150px; height: auto; margin-bottom: 15px;">
+            </a><br>
             이 개발자에게는 커피가 필요해요.<br>
             <span style="font-size: 0.8em; color: #666;">This developer needs a coffee.</span>
         </div>
@@ -38,6 +42,20 @@
         <script type='text/javascript'>
             kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'T6T81PN9KQ');
             kofiwidget2.draw();
+        </script>
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            document.addEventListener('dragstart', event => event.preventDefault());
+            document.addEventListener('selectstart', event => event.preventDefault());
+            document.addEventListener('keydown', event => {
+                if (
+                    event.key === 'F12' ||
+                    (event.ctrlKey && event.shiftKey && ['I', 'J', 'C'].includes(event.key.toUpperCase())) ||
+                    (event.ctrlKey && event.key.toUpperCase() === 'U')
+                ) {
+                    event.preventDefault();
+                }
+            });
         </script>
     </div>
 </body>
