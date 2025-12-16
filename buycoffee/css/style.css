@@ -403,3 +403,51 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/* 모바일 반응형 */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .message {
+        padding: 20px;
+    }
+
+    .lang-toggle {
+        top: 15px;
+        right: 15px;
+    }
+
+    .lang-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .app-buttons {
+        gap: 20px !important;
+        /* 인라인 스타일 오버라이드 */
+    }
+
+    .app-buttons img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .guestbook-section {
+        padding: 20px;
+    }
+
+    .guestbook-item {
+        padding: 12px;
+    }
+
+    .modal-content {
+        width: 85%;
+        padding: 20px;
+    }
+}
