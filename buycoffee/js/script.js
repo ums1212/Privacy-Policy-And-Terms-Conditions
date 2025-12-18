@@ -1,5 +1,5 @@
 // API 설정
-const API_BASE_URL = 'http://43.201.227.251/api';
+const API_BASE_URL = 'https://comon.dev/api';
 const ITEMS_PER_PAGE = 5;
 
 // 다국어 번역 데이터
